@@ -1,35 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
 
-body, html{
-    margin:0;
-    min-height: 100%;
-    background-color: black;
-    background-image: linear-gradient(147deg, #af39fe 0%, #4c38fd 74%);
-    background-repeat: no-repeat;
-    background-size: cover;
+/**********************************/
+/*		   Styling Feature	      */
+/**********************************/
+
+.feature-intro {
+    margin: none;
+    padding: 0px;
 }
 
+/* Intro Formatting */
 .intro {
+    margin: none;
     position: relative;
-    text-align: center;
+    text-align: right;
     color: white;
-    height: 75vh;
+    height: calc(100vw * (9 / 16) );
+    max-height: 650px;
 }
 
-.intro__img img{
-    width: 100%;
-    box-shadow: 0px 14px 80px rgba(255, 255, 255, 0.2);
-}
-
+/* Div Formatting */
 .intro__info {
     white-space:nowrap;
     position: absolute;
     top: 50%;
     left: 25%;
-    transform: translate(60%, -35%);
+    transform: translate(150%, -35%);
     font-family: "Inter", "Gill Sans", sans-serif;
 }
 
+/* Text */
 .intro__info h1 {
     text-decoration: none;
     font-size: 3.5vw;
@@ -41,6 +41,10 @@ body, html{
     line-height: 0.5;
 }
 
+/* Links */
+.intro__links {
+    float: right;
+}
 .intro__links a{
     text-decoration: none;
     padding-left: 0.5vw;
@@ -52,3 +56,7 @@ body, html{
     filter: invert(98%) sepia(0%) saturate(7487%) hue-rotate(26deg) brightness(105%) contrast(105%);
 }
 
+
+/**********************************/
+/*		   Styling Intro	      */
+/**********************************/

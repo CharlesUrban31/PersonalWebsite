@@ -1,29 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
+<title>Home - The Urban Engineer</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<style type="text/css">
+    html, #page { padding:0; margin:0;}
+    body { margin:0; padding:0; width:100%; font:normal 12px/2.0em Sans-Serif;}
+    #page { background:#fff;}
+    #header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+    /* Clear both sides to assist with div alignment  */
+    .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles/layoutStyle.css" rel="stylesheet" />
+<link href="styles/headerStyle.css" rel="stylesheet" />
+<link href="styles/footerStyle.css" rel="stylesheet" />
 <link href="styles/homeStyle.css" rel="stylesheet" />
 </head>
 <body>
-    <section class="intro" style="background-image: url('images/background.jpg'); background-repeat: no-repeat; background-size: cover;">
-        <div class="intro__info">
-            <h1>Charles Urban</h1>
-            <h2>Computer Engineer</h2>
-            <div class="intro__links">
-                <a href="http://www.github.com">
-                    <img src="images/svg/github.svg">
-                </a>
-                <a href="http://www.linkedin.com">
-                    <img src="images/svg/linkedin.svg">
-                </a>
-                <a href="http://www.facebook.com">
-                    <img src="images/svg/facebook.svg">
-                </a>
+    <header id="header">
+        <div id="header-inner">	
+            <div id="logo">
+                <h1><a href="Home.html">Charles<span>Urban</span></a></h1>
+            </div>
+            <div id="top-nav">
+                <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </header>
+
+    <div class="feature-intro">
+        <!-- Feature Section-->
+        <div class="intro" style="background-image: url('images/background.jpg'); background-repeat: no-repeat; background-size: cover;">
+            <div class="intro__info">
+                <h1>Charles Urban</h1>
+                <h2>Computer Engineer</h2>
+                <div class="intro__links">
+                    <a href="http://www.github.com" rel="nofollow">
+                        <img src="images/svg/github.svg">
+                    </a>
+                    <a href="http://www.linkedin.com" rel="nofollow">
+                        <img src="images/svg/linkedin.svg">
+                    </a>
+                    <a href="http://www.facebook.com" rel="nofollow">
+                        <img src="images/svg/facebook.svg">
+                    </a>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="main">
-        
-    </section>
+    </div>
+
+    <article>
+    </article>
+
+    <footer id="footer">
+        <div class="company-details">
+            <div class="row">
+                <div id="col1">
+                    <span id="icon" class="fa fa-map-marker"></span>
+                    <span>
+                    North Dakota State University<br />Fargo, ND 58102
+                    </span>
+                </div>
+
+                <div id="col2">
+                    <span id="icon" class="fa fa-phone"></span>
+                    <span>
+                    Telephone: +1-612-836-8833
+                    </span>
+                </div>
+
+                <div id="col3">
+                    <span id="icon" class="fa fa-envelope"></span>
+                    <span>charlesurban23@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>© All rights reserved | Charles Urban</p>
+        </div>
+</footer>
+
 </body>
 </html>

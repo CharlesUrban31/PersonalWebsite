@@ -1,56 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About</title>
-<link href="styles/aboutStyle.css" rel="stylesheet" />
+<title>Page Title - The Urban Engineer</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<style type="text/css">
+    html, #page { padding:0; margin:0;}
+    body { margin:0; padding:0; width:100%; font:normal 12px/2.0em Sans-Serif;}
+    #page { background:#fff;}
+    #header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+    /* Clear both sides to assist with div alignment  */
+    .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="styles/layoutStyle.css" rel="stylesheet" />
+<link href="styles/headerStyle.css" rel="stylesheet" />
+<link href="styles/footerStyle.css" rel="stylesheet" />
+<link href="styles/aboutPageStyle.css" rel="stylesheet" />
+<link href="styles/categoryElementStyle.css" rel="stylesheet" />
 </head>
-
 <body>
-    <div class="about-header">
-        <h1>ABOUT ME</h1>
-        <h3>Bachelors in Computer Engineering <br> Minor in Computer Science <br> North Dakota State Graduate </h3>         
-    </div>
-    <div class="about-main">
-        <div class="about-main__img">
-            <img src="images\selfPortrait.jpg" alt="Charles_Urban_Headshot">
+    <header id="header">
+        <div id="header-inner">	
+            <div id="logo">
+                <h1><a href="Home.html">Charles<span>Urban</span></a></h1>
+            </div>
+            <div id="top-nav">
+                <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
         </div>
-        <div class="about-main__content">
-            <div class ="about-main__intro">
-                <h2>Hello, I Am Charles Urban</h2>
-                <p>I am a Computer Engineer with experience in many fields in the industry.
-                    I have experience doing Indie Game Development through Unity. Those games can be found on the projects page.
-                    I also have experience working for John Deere on their Embedded Operating Systems team as well as their Sensors team.
-                    On those teams I mainly did small feature implementation and testing but also was asked to review documentation and traceability of requirements and test case documents.
-                    While doing those tasks, I had the chance to write some simple python automation scripts to make the process easier for all future users. <br>
-                    For more details regarding my previous work, feel free to email me!
-                </p>
-            </div>
-            <div class="about-main__info">
-                <table class="about-main__table">
-                    <tr>
-                        <td>Name</td>
-                        <td>Charles Urban</td>
-                    </tr>
-                    <tr>
-                        <td>Age</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>Location</td>
-                        <td>Fargo, North Dakota</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>charlesurban23@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Employement</td>
-                        <td>John Deere</td>
-                    </tr>
-                </table>
-            </div>
+    </header>
+    <div class="feature">
+        <div class="feature-inner">
+        <h1>About</h1>
+        </div>
+    </div>
 
+    <article>
+        <div class="about-header">
+            <h3>ABOUT ME</h3>
+            <h1>Who Am I?</h1>
+            <p>Hi, I'm Charles Urban. I am a Computer Engineering graduate from North Dakota State University. 
+            I'm currently in the process of trying to become a full stack developer. 
+            As of now, I have real world job experience through John Deere with embedded software development and automated test scripting development.
+            In my free time, I have been doing Indie Game Development, web design, software and application development.
+            In practice, I have been using <span style="font-weight: 500;">C, C#, C++, Java, React, Python, HTML, CSS, </span>and<span style="font-weight: 500;"> Racket</span> to achieve these projects.
+            <br>Please see below for more information on these projects!
+            </p>         
         </div>
 
-    </div>
+        <div class="about-feature">
+            <img src="images/selfPortrait.jpg" alt="Charles Urban Portrait" style="float: left;">
+            <div class="about-feature__content" style="float: left;">
+                <h2 id="info__title">Charles Urban</h2>
+                <span id="info_education">
+                    <h3>EDUCATION</h3>
+                    <ul id="ul_education">
+                        <li>Undergraduate - NDSU 2023</li>
+                        <ul>
+                            <li>Bachelors in Computer Engineering</li> 
+                            <li>Minor in Computer Science</li>
+                        </ul>
+                    </ul>
+                </span>
+                <span id="info_employement">
+                    <h3>EMPLOYEMENT</h3>
+                    <ul id="ul_employement">
+                        <li>John Deere</li>
+                            <ul>
+                                <li>Student Engineer</li>
+                                <li>Dec. 2019 - Present</li>
+                            </ul>
+                    </ul>
+                </span>
+            </div>
+        </div>
+
+        <div class="about-categories">
+            <div class="cat-row1">
+                <div id="cat1" class="Category">
+                    <img src="images/CategoryIcons/GameDev.jpg" alt="Game Dev Icon">
+                    <div class="Category-Info">
+                        <h2>Game Dev</h2>
+                        <p>Self-taught Indie Game Developer using Unity and publishing through Web-GL</p>
+                        <a href="#" id="read-more-btn">READ MORE</a>
+                    </div>
+                </div>
+                <div id="cat2" class="Category">
+                    <img src="images/CategoryIcons/WebDesign.jpg" alt="Web Design Icon">
+                    <div class="Category-Info">
+                        <h2>Web Design</h2>
+                        <p>Self-taught web designer. Developed this entire website from scratch while learning in the process.</p>
+                        <a href="#" id="read-more-btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cat-row2">
+                <div id="cat3" class="Category">
+                    <img src="images/CategoryIcons/SoftwareDev.jpg" alt="Software Dev Icon">
+                    <div class="Category-Info">
+                        <h2>Software Dev</h2>
+                        <p>Assistant developer on mobile to desktop communication software for a Virtual Reality Pub in downtown Kansas City, MO.</p>
+                        <a href="#" id="read-more-btn">READ MORE</a>
+                    </div>
+                </div>
+                <div id="cat4" class="Category">
+                    <img src="images/CategoryIcons/AppDev.jpg" alt="App Dev Icon">
+                    <div class="Category-Info">
+                        <h2>App Dev</h2>
+                        <p>Lead developer on mobile app for a Virtual Reality Pub in downtown Kansas City, MO.</p>
+                        <a href="#" id="read-more-btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <footer id="footer">
+        <div class="company-details">
+            <div class="row">
+                <div id="col1">
+                    <span id="icon" class="fa fa-map-marker"></span>
+                    <span>
+                    North Dakota State University<br />Fargo, ND 58102
+                    </span>
+                </div>
+
+                <div id="col2">
+                    <span id="icon" class="fa fa-phone"></span>
+                    <span>
+                    Telephone: +1-612-836-8833
+                    </span>
+                </div>
+
+                <div id="col3">
+                    <span id="icon" class="fa fa-envelope"></span>
+                    <span>charlesurban23@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="copyright">
+            <p>© All rights reserved | Charles Urban</p>
+        </div>
+</footer>
+
 </body>
+</html>
